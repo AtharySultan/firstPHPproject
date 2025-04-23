@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="{{asset('assets/css/common.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/styles/all-themes.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
     
 
 
@@ -22,7 +24,7 @@
         }
 
         body {
-        background-color: #b47e7e; /* أو أي لون تريده */
+        background-color: #e4e8fa; /* أو أي لون تريده */
     }
     </style>
     <title>Dasboard</title>
@@ -252,7 +254,7 @@
                                     <a  href="{{route('categories.index')}}">   الفئات   </a>
                                 </li>
                                     <li class="active">
-                                        <a >   المنتجات   </a>
+                                        <a href="{{route('AdmainProuduct.index')}}">   المنتجات   </a>
                                     </li>
                 
                                    
