@@ -63,6 +63,15 @@
                                     </a>
                                 @endif
                             </div>
+                            <div class="col">
+
+                                <div class="form-group">
+
+                                   <a class="btn btn-link" href="{{ route('register') }}">إنشاء حساب </a>
+
+                                </div>
+
+                                </div>
                         </div>
                     </form>
                 </div>

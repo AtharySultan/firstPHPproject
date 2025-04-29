@@ -105,8 +105,12 @@
                                                 <td class="text-center">{{$item->price}}</td>
                                                 <td class="text-center">{{$item->image}}</td>
                                                 <td class="text-center"> <a href="{{route('ProductEdit.index',['id' => $item->id])}}"><i class="bi bi-pencil-fill text-success"></i></a></th>
-                                                <td class="text-center"> <a href="{{route('ProductDelete.index',['id' => $item->id])}}"><i class="bi bi-trash-fill text-danger"></i></a></th>
-                
+<!-- حذف منتج (Product) -->
+<td class="text-center">
+    <a href="{{ route('ProductDelete.index', ['id' => $item->id]) }}" class="delete-button" style="background: none; border: none; cursor: pointer;">
+        <i class="bi bi-trash-fill text-danger"></i>
+    </a>
+</td>                
                 
                 
                                             </tr>

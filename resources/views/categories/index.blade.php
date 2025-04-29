@@ -62,9 +62,13 @@
                                 <td class="text-center">{{$item->id}}</td>
                                 <td class="text-center">{{$item->name}}</td>
                                 <td class="text-center">{{$item->Description}}</td>
-                                <td class="text-center"> <a href="{{route('categories.Edit',['id' => $item->id])}}"><i class="bi bi-pencil-fill text-success"></i></a></th>
-                                <td class="text-center"> <a href="{{route('categories.delet',['id' => $item->id])}}"><i class="bi bi-trash-fill text-danger"></i></a></th>
-
+                                <td class="text-center"> <a href="{{route('categories.Edit',['id' => $item->id])}}"><i class="bi bi-pencil-fill text-success"></i></a></td>
+<!-- حذف تصنيف (Category) -->
+                                <td class="text-center">
+                                    <a href="{{ route('categories.delet', ['id' => $item->id]) }}" class="delete-button" style="background: none; border: none; cursor: pointer;">
+                                        <i class="bi bi-trash-fill text-danger"></i>
+                                    </a>
+                                </td>
 
 
                             </tr>

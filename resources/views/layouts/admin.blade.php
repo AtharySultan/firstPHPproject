@@ -16,6 +16,11 @@
     <link href='https://fonts.googleapis.com/css?family=Almarai' rel='stylesheet'>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     <style>
+        .no-outline {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
         a{
             color:#0c074f
         }
@@ -343,6 +348,12 @@
     <script  src="{{asset('assets/js/bundles/amcharts5/map.js')}}"></script>
 
     <script  src="{{asset('assets/js/bundles/amcharts5/percent.js')}}"></script>
+    <!-- تحميل مكتبة SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- تحميل ملف السكربت حقك -->
+<script src="{{ asset('js/script.js') }}"></script>
+
 
 
 </body>

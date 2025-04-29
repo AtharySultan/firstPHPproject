@@ -61,7 +61,7 @@ class prouductcontrollerr extends Controller
         $items=products::create($arr);
         $items->save();
 
-        return redirect()->route('CreateProuduct.index');
+        return redirect()->route('AdmainProuduct.index');
 
     }
 
@@ -73,7 +73,7 @@ class prouductcontrollerr extends Controller
         if($data){
             $data->delete();
         }
-        return redirect()->route('CreateProuduct.index');
+        return redirect()->route('AdmainProuduct.index');
     }
 
     public function ProductEdit($id) {
@@ -109,7 +109,7 @@ class prouductcontrollerr extends Controller
             $product->save();
         }
     
-        return redirect()->route('CreateProuduct.index')->with('success', 'تم التحديث بنجاح');
+        return redirect()->route('AdmainProuduct.index')->with('success', 'تم التحديث بنجاح');
     }
     
 

@@ -2,6 +2,6 @@
 @section('content')
 <p>
 
-hello
+hello you
 </p>
 @endsection
